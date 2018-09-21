@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for soundcloud project
+# Scrapy settings for scTaker project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'soundcloud'
+BOT_NAME = 'scTaker'
 
-SPIDER_MODULES = ['soundcloud.spiders']
-NEWSPIDER_MODULE = 'soundcloud.spiders'
+SPIDER_MODULES = ['scTaker.spiders']
+NEWSPIDER_MODULE = 'scTaker.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'soundcloud (+http://www.yourdomain.com)'
+#USER_AGENT = 'scTaker (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'soundcloud.middlewares.SoundcloudSpiderMiddleware': 543,
+#    'scTaker.middlewares.SctakerSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'soundcloud.middlewares.SoundcloudDownloaderMiddleware': 543,
+#    'scTaker.middlewares.SctakerDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'soundcloud.pipelines.SoundcloudPipeline': 300,
+#    'scTaker.pipelines.SctakerPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
