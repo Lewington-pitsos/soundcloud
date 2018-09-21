@@ -8,7 +8,9 @@
 import scrapy
 
 
-class SctakerItem(scrapy.Item):
+class Track(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    file_url = scrapy.Field()
+    files = scrapy.Field()
+    title = scrapy.Field()

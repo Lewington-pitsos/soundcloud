@@ -14,6 +14,8 @@ BOT_NAME = 'scTaker'
 SPIDER_MODULES = ['scTaker.spiders']
 NEWSPIDER_MODULE = 'scTaker.spiders'
 
+ITEM_PIPELINES = {'scTaker.pipelines.TrackPipeline': 1}
+FILES_STORE = '/home/lewington/Downloads/soundcloud'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scTaker (+http://www.yourdomain.com)'
