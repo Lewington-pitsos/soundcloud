@@ -3,21 +3,21 @@ import json
 from scTaker.items import Track 
 
 
-client_id = "luWcnwCEWokSADZxVeKLcyZXAuOPSjLC"
+client_id = "FweeGBOOEOYJWLJN3oEyToGLKhmSz0I7"
 
 
 def liked_tracks_request(offset: int) -> str:
-    return f"https://api-v2.soundcloud.com/users/317883075/track_likes?offset={offset}&limit=2000&client_id=luWcnwCEWokSADZxVeKLcyZXAuOPSjLC&app_version=1537434439&app_locale=en"
+    return f"https://api-v2.soundcloud.com/users/317883075/track_likes?offset={offset}&limit=2000&client_id=FweeGBOOEOYJWLJN3oEyToGLKhmSz0I7&app_version=1555410248&app_locale=en"
 
 def track_links_request(track_id: int) -> str:
-    return f"https://api.soundcloud.com/i1/tracks/{track_id}/streams?client_id=luWcnwCEWokSADZxVeKLcyZXAuOPSjLC"
+    return f"https://api.soundcloud.com/i1/tracks/{track_id}/streams?client_id=FweeGBOOEOYJWLJN3oEyToGLKhmSz0I7"
 
 class TakerSpider(scrapy.Spider):
     name = "taker"
 
     def start_requests(self):
         yield scrapy.Request(
-            liked_tracks_request(1532751595251515), 
+            liked_tracks_request(1526812114880867), 
             self.take_track_ids,
         )
 
