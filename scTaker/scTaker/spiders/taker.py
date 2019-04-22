@@ -17,7 +17,7 @@ class TakerSpider(scrapy.Spider):
 
     def start_requests(self):
         yield scrapy.Request(
-            liked_tracks_request(1531738221499828), 
+            liked_tracks_request(0), # lower number = closer to start/more recent 
             self.take_track_ids,
         )
 
